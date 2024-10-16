@@ -15,3 +15,8 @@ kill:
 # Used to drop a local SQLite DB
 drop-local:
 	sudo rm -rf .wrangler/state/v3/d1
+db-restore:
+	npx wrangler d1 execute locations-dev --local --file=./sqlite/cities.sql
+
+db-restore-prod:
+	npx wrangler d1 execute locations-prod --remote --file=./sqlite/cities.sql
