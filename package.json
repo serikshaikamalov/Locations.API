@@ -1,0 +1,21 @@
+{
+  "name": "location-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.5.2",
+    "vitest": "2.0.5",
+    "wrangler": "^3.60.3"
+  },
+  "dependencies": {
+    "hono": "^4.6.5",
+    "nanoid": "^5.0.7",
+    "simple-cloudflare-orm": "^1.0.9"
+  }
+}
